@@ -18,7 +18,7 @@ const VideoList = () => {
 
 	console.log(videoList);
 	return (
-		<div className="flex flex-wrap gap-6 p-5">
+		<div className="flex flex-wrap gap-6 px-10 py-5">
 			{videoList?.items?.map((video) => (
 				<VideoCard video={video} key={video.id} />
 			))}

@@ -13,7 +13,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="flex justify-between items-center p-3 border-y border-gray-200">
+		<div className="flex justify-between items-center px-8 py-3 border-y border-gray-200">
 			<div className="flex gap-5 justify-between items-center">
 				<img
 					className="w-8 h-5 cursor-pointer"

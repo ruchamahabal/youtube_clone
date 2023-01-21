@@ -1,9 +1,11 @@
+import { useDispatch } from "react-redux";
+import { Link } from "react-router-dom";
+
+import { toggleMenu } from "../slices/sidebarSlice";
+
 import toggle from "../assets/images/toggle.png";
 import youtube from "../assets/images/youtube.png";
 import profile from "../assets/images/profile.jpeg";
-
-import { useDispatch } from "react-redux";
-import { toggleMenu } from "../slices/sidebarSlice";
 
 const Navbar = () => {
 	const dispatch = useDispatch();
@@ -20,7 +22,9 @@ const Navbar = () => {
 					src={toggle}
 					onClick={toggleMenufn}
 				></img>
-				<img className="w-10 h-10" src={youtube}></img>
+				<Link to="/">
+					<img className="w-10 h-10" src={youtube}></img>
+				</Link>
 			</div>
 			<input
 				type="text"

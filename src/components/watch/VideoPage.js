@@ -1,3 +1,4 @@
+import ChatContainer from "./ChatContainer";
 import CommentSection from "./CommentSection";
 import VideoPlayer from "./VideoPlayer";
 
@@ -8,7 +9,7 @@ const VideoPage = () => {
 				<VideoPlayer />
 				<CommentSection />
 			</div>
-			<div></div>
+			<ChatContainer />
 		</div>
 	);
 };
